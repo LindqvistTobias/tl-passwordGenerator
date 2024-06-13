@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" sizes="32x32" href="./assets/images/techover.ico" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+
+    <title>Lösenords Generator</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <h1>Password Generator</h1>
+      <div class="password-container">
+        <p id="password">uvt1k5v3b28o87a</p>
+        <div id="copied">Copied!</div>
+        <img src="/images/copy-icon.svg" alt="Copy password" id="copy-password">
+      </div>
+      <div class="lower-container">
+        <div class="character-length">
+          <p>Character Length</p>
+          <p id="character-length-number">15</p>
+        </div>
+        <div class="slider-container">
+          <input type="range" min="8" max="20" value="15" class="slider" id="myRange">
+        </div>
+        <div class="checkbox-container">        
+          <label class="checkmark-container">
+            <input type="checkbox" id="uppercase"> Include Uppercase Letters
+            <span class="checkmark"></span>
+          </label> 
+          <label class="checkmark-container">
+            <input type="checkbox" checked="checked" id="lowercase"> Include Lowercase Letters
+            <span class="checkmark"></span>
+          </label> 
+          <label class="checkmark-container">
+            <input type="checkbox" checked="checked" id="numbers"> Include Numbers
+            <span class="checkmark"></span>
+          </label>
+          <label class="checkmark-container">
+            <input type="checkbox" id="symbols"> Include Symbols
+            <span class="checkmark"></span> 
+          </label>         
+        </div>
+        <div class="strength-container">
+          <p id="strength-text">Strength</p>
+          <p id="strength-string">MEDIUM</p>
+          <div id="strength-one" class="strength-box"></div>
+          <div id="strength-two" class="strength-box"></div>
+          <div id="strength-three" class="strength-box"></div>
+          <div id="strength-four" class="strength-box"></div>
+        </div>
+        <div class="generate-container">
+          <p>Generate</p>
+        </div>          
+      </div>  
+      <img src="/images/techover-logo.png" alt="Techover Logo" id="logo">
+    </div>      
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </body>
+</html>
